@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página en HTML Puro</title>
 </head>
 <body>
-    
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Bienvenido a mi Página Web</h1>
+        <p>Esta es una página construida 100% con HTML estándar.</p>
+    </header>
+
+    <hr>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h2>Sección de Inicio</h2>
+            <p>El HTML (HyperText Markup Language) es el lenguaje de marcado estándar para la creación de páginas web. Con él estructuramos el contenido como textos, imágenes y enlaces.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
+        </section>
+
+        <!-- Sección Acerca de -->
+        <section id="acerca">
+            <h2>Acerca de este proyecto</h2>
+            <p>Aquí puedes incluir información sobre ti, tu empresa o el propósito de tu sitio web.</p>
+            <ul>
+                <li><strong>Fácil de aprender:</strong> Su sintaxis basada en etiquetas es muy intuitiva.</li>
+                <li><strong>Compatible:</strong> Funciona en cualquier navegador web moderno.</li>
+                <li><strong>Versátil:</strong> Es la base sobre la cual se añade diseño (CSS) y interactividad (JavaScript).</li>
+            </ul>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Enviar Mensaje</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
